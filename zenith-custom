@@ -1,0 +1,199 @@
+@import url('https://azlen.github.io/roam-themes/zenith.css');
+
+:root {
+  --page-width: 800px;
+  --header-font: "Source Sans Pro", "Inter", sans-serif;
+  --body-font: "Source Sans Pro", "Inter", sans-serif;
+    
+  --bg-color: #EEEEEE;
+  --page-color: rgba(255, 255, 255, 0.95);
+    
+  --text-color: #141B41;;
+  --icon-color: #5c7080; /* #5c7080 */
+  --bullet-color: rgba(0, 0, 0, 0.2);
+    
+  --page-shadow: 0px 8px 14px rgba(0, 0, 0, 0.05);
+    
+  --color-primary: 0, 166, 251;
+  --color-primary-contrast: #FFFFFF;
+  --color-secondary: 255, 191, 0;
+  --color-secondary-contrast: #FFFFFF;
+  --color-highlight: 249, 200, 102;
+  --color-tagback: 255, 247, 0;
+  --color-accent-red: 230, 14, 50;
+  
+}
+
+#roam-right-sidebar-content > * {
+    min-width: 58.5px;
+}
+
+/* Update highlight color */
+.roam-highlight {
+  	background-color: rgba(var(--color-highlight));
+}
+
+/* Update saving icon */
+.rm-saving-icon .rm-saving-remote {
+  	background-color: rgba(var(--color-accent-red));
+}
+
+/* Updating color of hyperlinks */
+a {
+  color: rgba(var(--color-primary)) !important;
+}
+
+/*//////////////////////////*/
+/*                          */
+/*         Pomodoro         */
+/*    thx to @Mappletons    */
+/*                          */
+/*//////////////////////////*/
+
+.dont-focus-block.bp3-button, .rm-pomodoro {
+  background: rgba(var(--color-primary)) !important;
+  color: #fff !important;
+  padding: 4px 14px;
+  line-height: 2em;
+  font-weight: 600;
+  border-radius: 2em;
+  border: 1px solid (rgba(var(--color-primary)));
+  transition:  background .2s ease, border .3s ease;
+}
+
+
+.dont-focus-block.bp3-button:hover {
+    background: white !important;
+  	color: black;
+    border: 1px solid #2f512c;
+    transition:  background .2s ease, border .3s ease;
+}
+
+
+.rm-pomodoro::first-letter {
+  margin-right: 8px;
+}
+
+/* Custom data tags */
+span.rm-page-ref[data-tag="Tweet"] {
+    background: #81D5ED !important;
+    color: white !important;
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Literature Notes"] {
+    background: #9769FF !important;
+    color: white !important;
+    padding: 3px 7px;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+span.rm-page-ref[data-tag="Evergreens"] {
+    background: #0DBAC6 !important;
+    color: #fff !important;
+    padding: 3px 8px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Seedling"] {
+    color: #0dbac6 !important;
+    padding: 3px 3px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+span.rm-page-ref[data-tag="Idea"] {
+    color: #FCB815 !important;
+    padding: 3px 4px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+span.rm-page-ref[data-tag="Idea"]:before {
+    content: '✦ '
+}
+
+span.rm-page-ref[data-tag="Talk"] {
+    background: #7172FC;
+    color: #fff;
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Waiting"] {
+    background: #F9C866;
+    color: black !important; 
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Researching"] {
+    background: #FF9D66 !important;
+    color: #fff;
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Synthesising"] {
+    background: #FC766F !important;
+    color: #fff !important;
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Alive"] {
+    background: #EE5F85 !important;
+    color: #fff !important;
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="High-priority"] {
+    color: #EE5F85 !important;
+  	background-color: #051923;
+    padding: 3px 4px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+span.rm-page-ref[data-tag="High-priority"]:before {
+    content: '!!! '
+}
+
+span.rm-page-ref[data-tag="Med-priority"] {
+    color: #F9C866 !important;
+    background-color: #051923;
+    padding: 3px 4px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+span.rm-page-ref[data-tag="Med-priority"]:before {
+    content: '!! '
+}
+
+span.rm-page-ref[data-tag="Low-priority"] {
+    color: white !important;
+  	background-color: #051923;
+    padding: 3px 4px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+span.rm-page-ref[data-tag="Low-priority"]:before {
+    content: '! '
+}
+
+/* Table changes */
+.roam-table td {
+  min-width: 10px;
+}
